@@ -1,0 +1,99 @@
+<ng-container *ngIf="currentType === 'checkbox'">
+  <label class="clickable" *ngIf="!setting.gridLayout"
+    >{{ setting.displayName }}
+    <input
+      #checkbox
+      (change)="onCheckBoxChanged(checkbox, setting)"
+      [checked]="currentValue != 'false'"
+      data-testid="checkbox"
+      type="checkbox"
+  /></label>
+</ng-container>
+
+<ng-container *ngIf="currentType === 'datetime'">
+  <label *ngIf="!setting.gridLayout">{{ setting.displayName }} </label>
+  <input
+    #dateTime
+    appDebounceClick
+    (debounceClick)="onDateTimeChanged(dateTime, setting)"
+    [(ngModel)]="currentValue"
+    class="datetime"
+    data-testid="datetime"
+    type="datetime-local"
+  />
+</ng-container>
+<ng-container *ngIf="currentType === 'duration'">
+  <label *ngIf="!setting.gridLayout">{{ setting.displayName }}</label>
+  <input
+    #duration
+    (change)="onDurationChanged(duration, setting)"
+    [(ngModel)]="currentValue"
+    class="durationContainerStyle"
+    type="time"
+  />
+</ng-container>
+<ng-container *ngIf="currentType === 'select'">
+  <label *ngIf="!setting.gridLayout">{{ setting.displayName }}</label>
+  <div>
+    <select
+      data-testid="select"
+      class="select"
+      #select
+      (change)="onSelectOptionChanged(select, setting)"
+    >
+      <option *ngIf="!currentValue">Please choose a value</option>
+      <option *ngFor="let option of currentOptions">{{ option }} </option>
+    </select>
+  </div>
+</ng-container>
+<ng-container *ngIf="currentType === 'label'">
+  <label>{{ currentValue }}</label>
+</ng-container>
+<ng-container *ngIf="currentType === 'multiselect'">
+  <label *ngIf="!setting.gridLayout">{{ setting.displayName }}</label>
+  <div>
+    <select
+      class="select"
+      #select
+      multiple="true"
+      (change)="onSelectOptionChanged(select, setting)"
+    >
+      <option
+        *ngFor="let option of currentOptions"
+        [selected]="onGetSelected(option)"
+        >{{ option }}</option
+      >
+    </select>
+  </div></ng-container
+>
+<ng-container *ngIf="currentType === 'radio'">
+  <label class="clickable" *ngIf="!setting.gridLayout"
+    >{{ setting.displayName }}
+    <input
+      #radio
+      data-testid="radio"
+      [checked]="currentValue != 'false'"
+      (change)="onRadioChanged(radio, setting)"
+      type="radio"
+    />
+  </label>
+</ng-container>
+
+<ng-container *ngIf="currentType === 'text'">
+  <label *ngIf="!setting.gridLayout">{{ setting.displayName }}</label>
+  <div>
+    <input
+      #text
+      data-testid="text"
+      class="text"
+      type="text"
+      (focus)="onFocus(text, setting)"
+      (change)="onTextChanged(text, setting)"
+      (keyup)="onTextKeyUp(text, setting)"
+      [(ngModel)]="currentValue"
+    />
+    <span *ngIf="setting.showRemaining" class="labelHoverGray">{{
+      setting.remainingChars
+    }}</span>
+  </div>
+</ng-container>

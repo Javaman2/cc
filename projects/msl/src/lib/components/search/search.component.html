@@ -1,0 +1,17 @@
+<div class="searchContainer">
+  <input
+    #search
+    type="text"
+    (keyup)="onSearchKeyUp(search, $event)"
+    [placeholder]="placeholder"
+  />
+  <div class="block">
+    <button>
+      <fa-icon (click)="onSearchClicked(search)" [icon]="faSearch"></fa-icon>
+    </button>
+
+    <button *ngIf="showClearButton" (click)="onClearClicked(search)">
+      Clear
+    </button>
+  </div>
+</div>

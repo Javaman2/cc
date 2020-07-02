@@ -1,0 +1,80 @@
+ 
+ ::ng-deep :root{
+   --boxshadow: 4px 4px 4px gray;
+ }
+#stackTrace {
+   background: transparent;    
+   left:50%;
+   position: fixed;
+   top:0;
+   transform:translate(-50%, 50%);    
+}
+
+.gridContainer {
+   display: grid;   
+   grid-template-columns: auto;
+
+}
+ 
+ button{
+    margin:2.5px;
+ }
+.buttons{  
+   justify-content: center;
+}
+.errorCode {       
+   background: #00838f;
+   border: 1px solid gray; 
+   color: white;
+   justify-content: center;  
+   padding:10px;
+}
+
+.content{
+   display:grid; 
+   padding:10px;
+   
+} 
+.center{   
+   align-items: center;
+   background: white;
+   box-shadow: var(--boxshadow);
+   display:grid;
+   grid-template-rows: auto auto;
+   left:50%;
+   position: absolute;
+   top:50%;
+   transform:translate(-50%,-50%);
+   width:500px;
+}
+.warning {  
+   color:black;
+ 
+
+} 
+.stackTraceButton{
+   position: absolute;
+   top:-145px;
+   right: 20px;
+}
+.textarea textarea{
+   box-sizing: border-box;
+   width:1500px;
+   height:500px;
+   position: relative;
+   top: -160px;
+   box-shadow: var(--boxshadow);
+}
+.fadeIn {
+   animation: animatezoom .5s;
+ }
+ @keyframes animatezoom {
+   from {
+     transform: scale(0);
+   }
+   to {
+     transform: scale(1);
+   }
+ }
+
+ 

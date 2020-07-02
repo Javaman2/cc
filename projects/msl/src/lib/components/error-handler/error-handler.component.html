@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ error.statusText }}</h1>
+<div mat-dialog-content>
+  <p>Message</p>
+  {{ error.message }}
+</div>
+<div mat-dialog-actions>
+  <button class="mat-raised-button" mat-dialog-close>Close</button>
+  <button class="mat-raised-button mat-primary" (click)="copyToClipboard()">
+    Copy
+  </button>
+</div>

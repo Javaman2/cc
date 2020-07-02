@@ -1,0 +1,17 @@
+:host {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.27);
+    display: grid;
+    min-height: 8em;
+    height: auto;
+    justify-content: center;
+    padding: 1em;
+    position: absolute;
+    top: 2em;
+    width: 22em;
+}
+button {
+    margin-top: 1vh;
+    width: 7vw;
+}

@@ -1,0 +1,6 @@
+:host {
+    display: grid;
+    font-family: monospace;
+    margin: 1em;
+    padding: 1em;
+}

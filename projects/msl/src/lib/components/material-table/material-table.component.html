@@ -1,0 +1,57 @@
+<div *ngIf="!show">
+  Material Table Custom App Loading...
+</div>
+<div class="Right" *ngIf="show">
+  <mg-search></mg-search>
+</div>
+
+<div id="tableContainer" class="Grid" *ngIf="show">
+  <table
+    id="matTable"
+    mat-table
+    [dataSource]="dataSource"
+    matSort
+    class="mat-elevation-z8"
+  >
+    <ng-container
+      *ngFor="let col of columnHeaders; let i = index"
+      matColumnDef="{{ displayedColumns[i] }}"
+    >
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        <span *ngIf="col != 'Action'">
+          {{ col }}
+        </span>
+      </th>
+      <td mat-cell *matCellDef="let thing">
+        <span *ngIf="col != 'Action'">
+          {{ thing[displayedColumns[i]] }}
+        </span>
+        <mg-action-items
+          *ngIf="col === 'Actions'"
+          [showBackIcon]="showBackIcon"
+          [showDeleteIcon]="showDeleteIcon"
+          [showEditIcon]="showEditIcon"
+          [showSaveIcon]="showSaveIcon"
+          (onEdit)="onEdit($event)"
+          (onSave)="onSave($event)"
+          (onDelete)="onDelete($event)"
+          [model]="thing"
+        ></mg-action-items>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr
+      mat-row
+      *matRowDef="let row; columns: displayedColumns"
+      (click)="onRowClicked(row)"
+    ></tr>
+  </table>
+
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 15, 20]"
+    [pageSize]="5"
+    showFirstLastButtons
+  >
+  </mat-paginator>
+</div>

@@ -1,0 +1,68 @@
+<div *ngIf="showError" class="fadeIn warning">
+  <div class="center">
+    <div id="open-modal" class="gridContainer">
+      <div class="errorCode">
+        <div>{{ error.status }} : {{ error.statusText }}</div>
+      </div>
+      <div class="content">
+        <div>{{ error.name }}</div>
+        <div>{{ error.url }}</div>
+        <div>{{ error.message }}</div>
+        <div *ngIf="error.error">
+          Open console, Expand 'HttpErrorResponse', then expand 'error'
+        </div>
+        <!-- <div *ngIf="error.nextStep" class="">
+               {{ error.nextStep }}
+            </div> -->
+
+        <div class="buttons" *ngIf="showError" id="flexContainer">
+          <button
+            (click)="onYesClicked()"
+            *ngIf="showYesButton"
+            class="errorButtons"
+          >
+            Yes
+          </button>
+          <button
+            (click)="onNoClicked()"
+            *ngIf="showNoButton"
+            class="errorButtons"
+          >
+            No
+          </button>
+          <button
+            (click)="onToggleStackTrace($event)"
+            *ngIf="stackTraceExists"
+            class="errorButtons"
+            class="link"
+          >
+            Show Stack Trace
+          </button>
+          <button (click)="onRetry()" class="errorButtons" class="link">
+            Retry
+          </button>
+          <button (click)="onCopy($event)" class="errorButtons" class="link">
+            Copy
+          </button>
+          <button
+            (click)="onShowErrorsClose()"
+            class="errorButtons"
+            class="link"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="stackTrace" class="gridContainer textarea" *ngIf="showStackTrace">
+  <textarea spellcheck="false">
+         {{ error.error }}     
+    </textarea
+  >
+  <button class="stackTraceButton" (click)="onCopyStackTrace($event)">
+    Copy
+  </button>
+</div>

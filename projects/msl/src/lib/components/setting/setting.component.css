@@ -1,0 +1,36 @@
+:host {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.15fr 0.7fr;
+    column-gap: 1em;
+}
+.clickable {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+}
+
+input {
+    padding-left: 0.2em;
+    padding-bottom: 0.1em;
+    padding-top: 0.2em;
+    height: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+span {
+    margin-left: 1em;
+}
+
+select {
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+    padding-top: 0.2em;
+    margin-bottom: 0.5em;
+    min-width: 3em;
+}
+.datetime {
+    width: 91%;
+}
+.text {
+    width: 100%;
+}

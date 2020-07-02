@@ -1,0 +1,32 @@
+:host {
+   --fontSize: 1rem;
+   --iconColor: white;
+   --inputSize: 25em;
+}
+
+button {
+   font-size: var(--fontSize);
+   height: 1.5em;
+}
+
+input {
+   width: var(--inputSize);
+   background: var(--inputBackground);
+   padding-left: 0.2em;
+}
+
+.block {
+   display: grid;
+   grid-template-columns: 2em 4em;
+   grid-column-gap: 5px;
+   margin-left: 0.3em;
+}
+.searchContainer {
+   display: grid;
+   grid-template-columns: 17em 10em;
+}
+
+fa-icon {
+   background: transparent;
+   color: var(--iconColor);
+}

@@ -1,0 +1,17 @@
+:host {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+}
+@keyframes flashElement {
+    from {
+        background: #eee;
+    }
+    to {
+        background: transparent;
+    }
+}
+
+.flashElement {
+    animation: flashElement ease-in 0.5s;
+    animation-fill-mode: forwards;
+}

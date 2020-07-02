@@ -1,0 +1,40 @@
+.grid {
+  grid-template-columns: 0fr 0fr 0fr 0fr;
+  display: grid;
+  grid-column-gap: 0.5em;
+  grid-template-rows: 0.3fr;
+}
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  background-color: darkgray;
+  border-radius: 6px;
+  bottom: 1.8em;
+  color: #fff;
+  font-size: 12px;
+  left: -1.1em;
+  opacity: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: auto;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}

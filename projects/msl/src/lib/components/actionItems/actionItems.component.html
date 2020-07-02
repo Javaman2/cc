@@ -1,0 +1,24 @@
+<div class="grid" name="test" ngDefaultControl>
+  <div *ngIf="showEditIcon" class="tooltip">
+    <fa-icon (click)="onEditClicked()" [icon]="iconEditItem"></fa-icon>
+    <span class="tooltiptext">Edit</span>
+  </div>
+
+  <div *ngIf="showSaveIcon" class="tooltip">
+    <fa-icon
+      (click)="onSaveClicked()"
+      [icon]="iconSaveItem"
+      [spin]="spinSaveIcon"
+    ></fa-icon>
+    <span class="tooltiptext">Save</span>
+  </div>
+  <div *ngIf="showBackIcon" class="tooltip">
+    <fa-icon (click)="onBackClicked()" [icon]="iconUndo"></fa-icon>
+    <span class="tooltiptext">Back</span>
+  </div>
+  <div *ngIf="showDeleteIcon" class="tooltip">
+    <fa-icon (click)="onDeleteClicked()" [icon]="iconRemoveItem"> </fa-icon>
+    <span class="tooltiptext">Delete</span>
+  </div>
+  <button *ngIf="showCloseButton" (click)="onCloseClicked()">Close</button>
+</div>
