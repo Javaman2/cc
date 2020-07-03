@@ -16,6 +16,7 @@ export * from "./lib/components/dialog/dialog.component";
 export * from "./lib/components/dialog/message/message.component";
 export * from "./lib/components/error-handler/error-handler.component";
 export * from "./lib/components/errors/errorModel";
+export * from "./lib/components/errors/errors.component";
 export * from "./lib/components/expander/expander.component";
 export * from "./lib/components/material-table/material-table.component";
 export * from "./lib/components/search/search.component";

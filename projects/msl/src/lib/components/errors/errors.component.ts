@@ -39,9 +39,9 @@ export class ErrorsComponent implements OnInit {
       this.open(error);
     });
     this.EventService.CloseErrorPopupEvent.subscribe((close) => {
-      let showError = (this.showError = false);
-      let showStackTrace = (this.showStackTrace = false);
-      let stackTraceExists = (this.stackTraceExists = false);
+      this.showError = false;
+      this.showStackTrace = false;
+      this.stackTraceExists = false;
       this.cdf.detectChanges();
     });
 
