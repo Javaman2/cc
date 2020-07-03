@@ -1,24 +1,19 @@
 {
   "name": "msl",
-  "version": "0.0.16",
-  "peerDependencies": {},
-  "Dependencies": {
-    "@angular/animations": "8.2.14",
-    "@angular/cdk": "8.2.3",
-    "@angular/common": "8.2.14",
-    "@angular/compiler": "8.2.14",
-    "@angular/core": "8.2.14",
-    "@angular/forms": "8.2.14",
-    "@angular/material": "8.2.3",
-    "@angular/platform-browser": "8.2.14",
-    "@angular/platform-browser-dynamic": "8.2.14",
-    "@angular/router": "8.2.14",
-    "@fortawesome/angular-fontawesome": "0.4.0",
-    "@fortawesome/fontawesome-free": "5.12.1",
-    "@fortawesome/fontawesome-svg-core": "1.2.27",
-    "@fortawesome/free-regular-svg-icons": "5.12.1",
-    "@fortawesome/free-solid-svg-icons": "5.12.1",
-    "@testing-library/angular": "8.2.0",
-    "@microsoft/signalr": "3.1.5"
+  "version": "0.0.18",
+  "peerDependencies": {
+    "@fortawesome/angular-fontawesome": "^0.4.0",
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-regular-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0"
+  },
+  "devDependencies": {
+    "@compodoc/compodoc": "^1.1.11",
+    "@fortawesome/angular-fontawesome": "^0.4.0",
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-regular-svg-icons": "^5.12.0",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0"
   }
 }

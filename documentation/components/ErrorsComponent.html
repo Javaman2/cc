@@ -1,0 +1,1384 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mslparent documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mslparent documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ErrorsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/msl/src/lib/components/errors/errors.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>mg-errors</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./errors.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./errors.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#error">error</a>
+                            </li>
+                            <li>
+                                <a href="#showError">showError</a>
+                            </li>
+                            <li>
+                                <a href="#showNoButton">showNoButton</a>
+                            </li>
+                            <li>
+                                <a href="#showStackTrace">showStackTrace</a>
+                            </li>
+                            <li>
+                                <a href="#showYesButton">showYesButton</a>
+                            </li>
+                            <li>
+                                <a href="#stackTraceExists">stackTraceExists</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onCopy">onCopy</a>
+                            </li>
+                            <li>
+                                <a href="#onCopyStackTrace">onCopyStackTrace</a>
+                            </li>
+                            <li>
+                                <a href="#onCopyToClipBoard">onCopyToClipBoard</a>
+                            </li>
+                            <li>
+                                <a href="#onNoClicked">onNoClicked</a>
+                            </li>
+                            <li>
+                                <a href="#onRetry">onRetry</a>
+                            </li>
+                            <li>
+                                <a href="#onShowErrorsClose">onShowErrorsClose</a>
+                            </li>
+                            <li>
+                                <a href="#onToggleStackTrace">onToggleStackTrace</a>
+                            </li>
+                            <li>
+                                <a href="#onYesClicked">onYesClicked</a>
+                            </li>
+                            <li>
+                                <a href="#open">open</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cdf: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, EventService: <a href="../injectables/EventService.html">EventService</a>, HtmlElementService: <a href="../injectables/HtmlElementService.html">HtmlElementService</a>, Router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cdf</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>EventService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EventService.html" target="_self" >EventService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>HtmlElementService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HtmlElementService.html" target="_self" >HtmlElementService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>Router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCopy"></a>
+                    <span class="name">
+                        <b>
+                            onCopy
+                        </b>
+                        <a href="#onCopy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCopy(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCopyStackTrace"></a>
+                    <span class="name">
+                        <b>
+                            onCopyStackTrace
+                        </b>
+                        <a href="#onCopyStackTrace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCopyStackTrace(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCopyToClipBoard"></a>
+                    <span class="name">
+                        <b>
+                            onCopyToClipBoard
+                        </b>
+                        <a href="#onCopyToClipBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCopyToClipBoard(elementID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>dynamically applies animation specified, then changes text to ack text, default delay is 1500milliseconds </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>elementID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onNoClicked"></a>
+                    <span class="name">
+                        <b>
+                            onNoClicked
+                        </b>
+                        <a href="#onNoClicked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onNoClicked()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onRetry"></a>
+                    <span class="name">
+                        <b>
+                            onRetry
+                        </b>
+                        <a href="#onRetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onRetry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onShowErrorsClose"></a>
+                    <span class="name">
+                        <b>
+                            onShowErrorsClose
+                        </b>
+                        <a href="#onShowErrorsClose"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onShowErrorsClose()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onToggleStackTrace"></a>
+                    <span class="name">
+                        <b>
+                            onToggleStackTrace
+                        </b>
+                        <a href="#onToggleStackTrace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onToggleStackTrace(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onYesClicked"></a>
+                    <span class="name">
+                        <b>
+                            onYesClicked
+                        </b>
+                        <a href="#onYesClicked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onYesClicked()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="open"></a>
+                    <span class="name">
+                        <b>
+                            open
+                        </b>
+                        <a href="#open"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>open(error: <a href="https://angular.io/api/common/http/HttpErrorResponse" target="_blank">HttpErrorResponse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>error</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/common/http/HttpErrorResponse" target="_blank" >HttpErrorResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="error"></a>
+                        <span class="name">
+                            <b>
+                            error</b>
+                            <a href="#error"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/common/http/HttpErrorResponse" target="_blank" >HttpErrorResponse</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showError"></a>
+                        <span class="name">
+                            <b>
+                            showError</b>
+                            <a href="#showError"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showNoButton"></a>
+                        <span class="name">
+                            <b>
+                            showNoButton</b>
+                            <a href="#showNoButton"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showStackTrace"></a>
+                        <span class="name">
+                            <b>
+                            showStackTrace</b>
+                            <a href="#showStackTrace"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showYesButton"></a>
+                        <span class="name">
+                            <b>
+                            showYesButton</b>
+                            <a href="#showYesButton"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stackTraceExists"></a>
+                        <span class="name">
+                            <b>
+                            stackTraceExists</b>
+                            <a href="#stackTraceExists"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">projects/msl/src/lib/components/errors/errors.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpErrorResponse } from &quot;@angular/common/http&quot;;
+import { Component, OnInit, ChangeDetectorRef } from &quot;@angular/core&quot;;
+import { ErrorModel } from &quot;./errorModel&quot;;
+import { Router, Event, NavigationStart } from &quot;@angular/router&quot;;
+import { HtmlElementService } from &quot;../../services/html-element-service.service&quot;;
+import { EventService } from &quot;../../services/event.service&quot;;
+
+@Component({
+  selector: &quot;mg-errors&quot;,
+  templateUrl: &quot;./errors.component.html&quot;,
+  styleUrls: [&quot;./errors.component.css&quot;],
+  inputs: [&quot;header&quot;, &quot;content&quot;, &quot;showError&quot;],
+})
+
+/** This component is contained in the app.component.html allowing for automatic error notification, it listens to the event.service for events.
+ *  To use this component: import it, declare it in CTOR, then fire the event
+ *    1) import {  EventService } from &#x27;@gavia/services/event.service&#x27;;
+ *    2) In CTOR : private  EventService:  EventService,
+ *    3) To Notify: this. EventService.ErrorEvent.emit(error);
+ */
+export class ErrorsComponent implements OnInit {
+  error: HttpErrorResponse;
+  showError: boolean &#x3D; false;
+  showNoButton: boolean &#x3D; false;
+  showStackTrace: boolean &#x3D; false;
+  showYesButton: boolean &#x3D; false;
+  stackTraceExists &#x3D; false;
+
+  constructor(
+    private cdf: ChangeDetectorRef,
+    private EventService: EventService,
+    private HtmlElementService: HtmlElementService,
+    private Router: Router
+  ) {}
+
+  ngOnInit(): void {
+    this.EventService.OpenErrorPopupEvent.subscribe((error) &#x3D;&gt; {
+      console.log(error);
+      this.open(error);
+    });
+    this.EventService.CloseErrorPopupEvent.subscribe((close) &#x3D;&gt; {
+      this.showError &#x3D; false;
+      this.showStackTrace &#x3D; false;
+      this.stackTraceExists &#x3D; false;
+      this.cdf.detectChanges();
+    });
+
+    this.Router.events.subscribe((event: Event) &#x3D;&gt; {
+      if (event instanceof NavigationStart) {
+        this.onShowErrorsClose();
+      }
+    });
+  }
+  onToggleStackTrace(event) {
+    this.showStackTrace &#x3D; !this.showStackTrace;
+    let state &#x3D; this.showStackTrace ? &quot;Opened&quot; : &quot;Closed&quot;;
+    this.HtmlElementService.animateWithAck(event, &quot;animate-opacity&quot;, state);
+  }
+  onCopy(event) {
+    this.onCopyToClipBoard(&quot;open-modal&quot;);
+    this.HtmlElementService.animateWithAck(event, &quot;animate-opacity&quot;, &quot;Copied&quot;);
+  }
+  onCopyStackTrace(event) {
+    this.onCopyToClipBoard(&quot;stackTrace&quot;);
+    this.HtmlElementService.animateWithAck(event, &quot;animate-opacity&quot;, &quot;Copied&quot;);
+  }
+  onYesClicked() {
+    this.EventService.QuestionResponseEvent.emit(true);
+  }
+  onNoClicked() {
+    this.EventService.QuestionResponseEvent.emit(false);
+  }
+  /** dynamically applies animation specified, then changes text to ack text, default delay is 1500milliseconds */
+
+  /** copy to clipboard uses getElementByID and the document execCommand &quot;copy&quot; */
+  onCopyToClipBoard(elementID: string) {
+    let element &#x3D; document.getElementById(elementID);
+    this.HtmlElementService.copyToClipBoard(element);
+  }
+
+  onShowErrorsClose() {
+    this.EventService.CloseErrorsPopup();
+  }
+
+  onRetry() {
+    window.location.replace(document.URL);
+  }
+
+  open(error: HttpErrorResponse) {
+    this.error &#x3D; error;
+    this.showError &#x3D; true;
+    // error.stackTrace
+    //   ? (this.stackTraceExists &#x3D; true)
+    //   : (this.stackTraceExists &#x3D; false);
+    // this.showNoButton &#x3D; error.showNoButton;
+    // this.showYesButton &#x3D; error.showYesButton;
+    // this.error.retry &#x3D; error.retry;
+    this.EventService.StopNavigationSpinner();
+    this.cdf.detectChanges();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;showError&quot; class&#x3D;&quot;fadeIn warning&quot;&gt;
+  &lt;div class&#x3D;&quot;center&quot;&gt;
+    &lt;div id&#x3D;&quot;open-modal&quot; class&#x3D;&quot;gridContainer&quot;&gt;
+      &lt;div class&#x3D;&quot;errorCode&quot;&gt;
+        &lt;div&gt;{{ error.status }} : {{ error.statusText }}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;content&quot;&gt;
+        &lt;div&gt;{{ error.name }}&lt;/div&gt;
+        &lt;div&gt;{{ error.url }}&lt;/div&gt;
+        &lt;div&gt;{{ error.message }}&lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;error.error&quot;&gt;
+          Open console, Expand &#x27;HttpErrorResponse&#x27;, then expand &#x27;error&#x27;
+        &lt;/div&gt;
+        &lt;!-- &lt;div *ngIf&#x3D;&quot;error.nextStep&quot; class&#x3D;&quot;&quot;&gt;
+               {{ error.nextStep }}
+            &lt;/div&gt; --&gt;
+
+        &lt;div class&#x3D;&quot;buttons&quot; *ngIf&#x3D;&quot;showError&quot; id&#x3D;&quot;flexContainer&quot;&gt;
+          &lt;button
+            (click)&#x3D;&quot;onYesClicked()&quot;
+            *ngIf&#x3D;&quot;showYesButton&quot;
+            class&#x3D;&quot;errorButtons&quot;
+          &gt;
+            Yes
+          &lt;/button&gt;
+          &lt;button
+            (click)&#x3D;&quot;onNoClicked()&quot;
+            *ngIf&#x3D;&quot;showNoButton&quot;
+            class&#x3D;&quot;errorButtons&quot;
+          &gt;
+            No
+          &lt;/button&gt;
+          &lt;button
+            (click)&#x3D;&quot;onToggleStackTrace($event)&quot;
+            *ngIf&#x3D;&quot;stackTraceExists&quot;
+            class&#x3D;&quot;errorButtons&quot;
+            class&#x3D;&quot;link&quot;
+          &gt;
+            Show Stack Trace
+          &lt;/button&gt;
+          &lt;button (click)&#x3D;&quot;onRetry()&quot; class&#x3D;&quot;errorButtons&quot; class&#x3D;&quot;link&quot;&gt;
+            Retry
+          &lt;/button&gt;
+          &lt;button (click)&#x3D;&quot;onCopy($event)&quot; class&#x3D;&quot;errorButtons&quot; class&#x3D;&quot;link&quot;&gt;
+            Copy
+          &lt;/button&gt;
+          &lt;button
+            (click)&#x3D;&quot;onShowErrorsClose()&quot;
+            class&#x3D;&quot;errorButtons&quot;
+            class&#x3D;&quot;link&quot;
+          &gt;
+            Close
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id&#x3D;&quot;stackTrace&quot; class&#x3D;&quot;gridContainer textarea&quot; *ngIf&#x3D;&quot;showStackTrace&quot;&gt;
+  &lt;textarea spellcheck&#x3D;&quot;false&quot;&gt;
+         {{ error.error }}     
+    &lt;/textarea
+  &gt;
+  &lt;button class&#x3D;&quot;stackTraceButton&quot; (click)&#x3D;&quot;onCopyStackTrace($event)&quot;&gt;
+    Copy
+  &lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./errors.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"> 
+ ::ng-deep :root{
+   --boxshadow: 4px 4px 4px gray;
+ }
+#stackTrace {
+   background: transparent;    
+   left:50%;
+   position: fixed;
+   top:0;
+   transform:translate(-50%, 50%);    
+}
+
+.gridContainer {
+   display: grid;   
+   grid-template-columns: auto;
+
+}
+ 
+ button{
+    margin:2.5px;
+ }
+.buttons{  
+   justify-content: center;
+}
+.errorCode {       
+   background: #00838f;
+   border: 1px solid gray; 
+   color: white;
+   justify-content: center;  
+   padding:10px;
+}
+
+.content{
+   display:grid; 
+   padding:10px;
+   
+} 
+.center{   
+   align-items: center;
+   background: white;
+   box-shadow: var(--boxshadow);
+   display:grid;
+   grid-template-rows: auto auto;
+   left:50%;
+   position: absolute;
+   top:50%;
+   transform:translate(-50%,-50%);
+   width:500px;
+}
+.warning {  
+   color:black;
+ 
+
+} 
+.stackTraceButton{
+   position: absolute;
+   top:-145px;
+   right: 20px;
+}
+.textarea textarea{
+   box-sizing: border-box;
+   width:1500px;
+   height:500px;
+   position: relative;
+   top: -160px;
+   box-shadow: var(--boxshadow);
+}
+.fadeIn {
+   animation: animatezoom .5s;
+ }
+ @keyframes animatezoom {
+   from {
+     transform: scale(0);
+   }
+   to {
+     transform: scale(1);
+   }
+ }
+
+ 
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="showError" class="fadeIn warning">  <div class="center">    <div id="open-modal" class="gridContainer">      <div class="errorCode">        <div>{{ error.status }} : {{ error.statusText }}</div>      </div>      <div class="content">        <div>{{ error.name }}</div>        <div>{{ error.url }}</div>        <div>{{ error.message }}</div>        <div *ngIf="error.error">          Open console, Expand \'HttpErrorResponse\', then expand \'error\'        </div>        <!-- <div *ngIf="error.nextStep" class="">               {{ error.nextStep }}            </div> -->        <div class="buttons" *ngIf="showError" id="flexContainer">          <button            (click)="onYesClicked()"            *ngIf="showYesButton"            class="errorButtons"          >            Yes          </button>          <button            (click)="onNoClicked()"            *ngIf="showNoButton"            class="errorButtons"          >            No          </button>          <button            (click)="onToggleStackTrace($event)"            *ngIf="stackTraceExists"            class="errorButtons"            class="link"          >            Show Stack Trace          </button>          <button (click)="onRetry()" class="errorButtons" class="link">            Retry          </button>          <button (click)="onCopy($event)" class="errorButtons" class="link">            Copy          </button>          <button            (click)="onShowErrorsClose()"            class="errorButtons"            class="link"          >            Close          </button>        </div>      </div>    </div>  </div></div><div id="stackTrace" class="gridContainer textarea" *ngIf="showStackTrace">  <textarea spellcheck="false">         {{ error.error }}         </textarea  >  <button class="stackTraceButton" (click)="onCopyStackTrace($event)">    Copy  </button></div></div>'
+    var COMPONENTS = [{'name': 'ActionItemsComponent', 'selector': 'mg-action-items'},{'name': 'ButtonComponent', 'selector': 'mg-button'},{'name': 'DialogComponent', 'selector': 'mg-dialog'},{'name': 'ErrorHandlerComponent', 'selector': 'mg-errors'},{'name': 'ErrorsComponent', 'selector': 'mg-errors'},{'name': 'ExpanderComponent', 'selector': 'mg-expander'},{'name': 'MaterialTableComponent', 'selector': 'mg-material-table'},{'name': 'MessageComponent', 'selector': 'mg-message'},{'name': 'MslComponent', 'selector': 'lib-msl'},{'name': 'SearchComponent', 'selector': 'mg-search'},{'name': 'SettingComponent', 'selector': 'mg-setting'},{'name': 'SignalRComponent', 'selector': 'mg-signal-r'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ErrorsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ErrorsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
