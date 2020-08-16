@@ -31,11 +31,16 @@
               "projects/msl/tsconfig.lib.json",
               "projects/msl/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "msl"
+  "defaultProject": "msl",
+  "cli": {
+    "analytics": false
+  }
 }
