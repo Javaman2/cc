@@ -22,10 +22,10 @@ import { SearchComponent } from "../search/search.component";
   styleUrls: ["./material-table.component.css"],
 })
 export class MaterialTableComponent implements OnInit, AfterViewInit {
-  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
-  @ViewChild(MatSort, { static: false }) sort: MatSort;
-  @ViewChild(MatTable, { static: false }) MatTable: MatTable<any>;
-  @ViewChild(SearchComponent, { static: false })
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatTable) MatTable: MatTable<any>;
+  @ViewChild(SearchComponent)
   SearchComponent: SearchComponent;
   @ViewChildren(ActionItemsComponent)
   ActionItemsComponents: ActionItemsComponent[];
