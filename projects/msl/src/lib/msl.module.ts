@@ -1,9 +1,15 @@
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatExpansionModule } from "@angular/material/expansion";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { CommonModule } from "@angular/common";
-import { MatTableModule, MatDialogModule } from "@angular/material";
+
+
+
+
 import { NgModule } from "@angular/core";
 import { MslComponent } from "./msl.component";
 import { ActionItemsComponent } from "../lib/components/actionItems/actionItems.component";
